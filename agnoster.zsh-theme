@@ -177,8 +177,8 @@ build_prompt() {
 }
 
 if [ "${PROMPT_ON_NEWLINE}" = "true" ] ; then
-  PROMPT='╭─%{%f%b%k%}$(build_prompt)
-╰─ '
+  PROMPT='|%{%f%b%k%}$(build_prompt)
+| '
 else
   PROMPT='%{%f%b%k%}$(build_prompt) '
 fi
